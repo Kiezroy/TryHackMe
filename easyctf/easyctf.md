@@ -2,7 +2,9 @@ Room: https://tryhackme.com/room/easyctf
 
 Title: EasyCTF
 
-Target IP: 10.10.164.53
+Target IP: 
+
+**NOTE:** Keep in mind this walkthrough was made throughout several days, so the target IP will appear different in the screenshots. Please use your own target IP provided with TryHackMe.
 
 1. How many services are running under port 1000?
 
