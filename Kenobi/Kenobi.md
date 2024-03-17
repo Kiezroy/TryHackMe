@@ -5,7 +5,7 @@ Target IP: 10.10.61.170
 1. Scan the machine with nmap, how many ports are open?
    - Perform a basic nmap scan using ```nmap -sC -sV [Target IP]```
    - We see 7 ports open: 21,22, 80, 111, 139, 445, 2049
-   - Answer: ***7***
+   - Answer: **7**
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/d2b36b23-1af4-4926-aafa-2894b0672133)
 
@@ -34,14 +34,14 @@ Target IP: 10.10.61.170
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/59e92523-23a0-42db-9328-644fbba22ce1)
 
-  - Answer: ***21***
+  - Answer: **21**
 
 4. What mount can we see?
   - Copy and paste the given command ```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount [Target IP]```
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/6174c55a-ecd7-4833-9d6d-43b7990db4a4)
 
-  - Answer: ***/var***
+  - Answer: **/var**
 
 5. What is the version?
   - Use netcat listner on port 21 to see the version of FTP being used
@@ -55,7 +55,7 @@ Target IP: 10.10.61.170
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/e4bb2ab9-d7c9-4e9c-ae6a-334e8203cc2e)
 
-  - Answer: ***4***
+  - Answer: **4**
 
 7. What is Kenobi's user flag?
   - Go back to netcat listener ```nc [Target IP] 21```
@@ -89,7 +89,7 @@ Target IP: 10.10.61.170
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/b48def7d-0fb3-418c-9733-d3e7f3198a64)
 
-  - Answer: ***d0b0f3f53b6caa532a83915e19224899***
+  - Answer: **d0b0f3f53b6caa532a83915e19224899**
 
 8. What file looks particularly out of the ordinary?
   - Run the command ```find / -perm -u=s -type f 2>/dev/null```
@@ -103,7 +103,7 @@ Target IP: 10.10.61.170
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/df3a9cc5-a969-4a08-abe0-275a9dd7b222)
 
-  - Answer: ***3***
+  - Answer: **3**
 
 10. What is the root flag?
   - Follow the commands to manipulate our path and gain a root shell
@@ -116,4 +116,4 @@ Target IP: 10.10.61.170
 
 ![image](https://github.com/Kiezroy/TryHackMe/assets/67439231/a9118b14-4d79-4c79-b38e-7944d0596613)
 
-
+   - Answer: **177b3cd8562289f37382721c28381f02**
