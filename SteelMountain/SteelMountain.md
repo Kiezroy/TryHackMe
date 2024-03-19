@@ -134,4 +134,6 @@ Target IP: 10.10.144.146
 
    - Answer: **9af5f314f57607c00fd09803a587db80**
 
+The Task 4 of the room isn't very relevant. It will use the same payload but does it through the python script rather than from metasploit. You have to import your RHOST, LHOST, and ports into the script. Uses winPEAS for privelegde esacalation, the same as PowerUp. We do the same process as before of stopping and starting the service and using a netcat listener. If you want the answers, they are below...
 
+- Answer: **powershell -c "Get Service"**
